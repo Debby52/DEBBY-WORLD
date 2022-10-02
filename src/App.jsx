@@ -18,7 +18,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     fontFamily: "Roboto, sans-serif",
-    color: "#041836",
+    color: "#OOOOFF",
     marginTop: "130px",
     padding: "10px",
   },
@@ -29,18 +29,18 @@ const styles = {
     background: "#fff",
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "LEFT",
     fontFamily: "Roboto, sans-serif",
-    borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
+    borderBottom: "2px solid rgba(0, 0, 0, 3.06)",
     padding: "0 10px",
-    boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
+    boxShadow: "0 1px 10px rgb(151 164 275 / 10%)",
   },
   headerRight: {
     display: "flex",
     gap: "20px",
     alignItems: "center",
-    fontSize: "15px",
-    fontWeight: "600",
+    fontSize: "12px",
+    fontWeight: "500",
   },
 };
 const App = ({ isServerInfo }) => {
@@ -67,7 +67,7 @@ const App = ({ isServerInfo }) => {
                 <Main/>
             </Route>
             <Route path="/nonauthenticated">
-              <h3>Please login using the "Authenticate" button</h3>
+              <h3>DEVERLOPERSWORLD</h3>
             </Route>
           </Switch>
           {isAuthenticated ? <Redirect to="/main" /> : <Redirect to="/nonauthenticated" />}
@@ -77,6 +77,6 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => <h4>Decentradit</h4>
+export const Logo = () => <h4>DEVELOPERS</h4>
 
 export default App;
